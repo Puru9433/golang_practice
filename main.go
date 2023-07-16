@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
@@ -37,8 +36,6 @@ func main() {
 		c.JSON(200, gin.H{"success": "Access granted for api-2"})
 
 	})
-
-	fmt.Println("Some change")
 
 	router.Run(":" + port)
 
